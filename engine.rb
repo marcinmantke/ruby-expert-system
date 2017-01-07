@@ -16,7 +16,7 @@ class Engine
   def forward
     @rules.each do |rule|
       @steps.push("Running rule #{rule.id}")
-      r.run(@database)
+      rule.run(@database)
     end
   end
 
